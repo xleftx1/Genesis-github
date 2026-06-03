@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+header{
+    background-color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1{
+    color: gold;
+    font-size: 50px;
+    margin: 0;
+}
+
+
+
+nav{
+    margin-top: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+
+
+.principal{
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+.principal h2{
+    font-size: 40px;
+    color: black;
+}
+
+.principal p{
+    font-size: 20px;
+    color: gray;
+}
+
+
+
+.titulo-servicios{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+
+
+.tarjeta{
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+
+.tarjeta h3{
+    color: black;
+}
+
+.tarjeta p{
+    color: gray;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta button{
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.tarjeta button:hover{
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
