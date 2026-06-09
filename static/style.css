@@ -1,7 +1,22 @@
 body{
 margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.body-inicio {
+overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+box-sizing: border-box;
 }
 
 header{
@@ -32,8 +47,10 @@ nav a:hover{
 color: gold;
 }
 
+
 .principal{
-height: 90vh;
+min-height: 90vh; 
+padding: 40px 20px; 
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -51,15 +68,11 @@ color: white;
 text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
 }
 
+
 .principal p{
 font-size: 20px;
 color: #f1f1f1;
 text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
-}
-
-.principal p{
-font-size: 20px;
-color: gray;
 }
 
 .titulo-servicios{
@@ -126,12 +139,18 @@ transform: scale(1.05);
 
 footer{
 background: black;
-color: white;
-text-align: center;
-padding: 20px;
-margin-top: 30px;
-width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    
+    margin-top: auto;
 }
+
+footer p {
+    margin: 0; 
+}
+
 .principal::before{
 content: "";
 position: absolute;
@@ -145,4 +164,47 @@ background: rgba(0,0,0,0.4);
 .principal *{
 position: relative;
 z-index: 1;
+}
+
+body.body-inicio .principal h2,
+body.body-inicio .principal p {
+    margin-bottom: 0; 
+}
+
+body.body-inicio footer {
+    margin-top: 0 !important;
+}
+
+.sobre-nosotros {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    text-align: center;       
+    max-width: 1000px;        
+    margin: 0 auto;           
+}
+
+.sobre-nosotros h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 25px;
+    width: 100%;             
+}
+
+.sobre-nosotros p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;        
+
+
+.imagen-nosotros {
+    max-width: 100%;
+    height: auto;
+    width: 900px;            
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
