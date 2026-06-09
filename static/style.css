@@ -33,14 +33,28 @@ color: gold;
 }
 
 .principal{
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 text-align: center;
-padding: 80px 20px;
-background: white;
+
+background: url('/static/img/fondo.png') center/cover no-repeat;
+position: relative;
+color: white;
 }
 
 .principal h2{
-font-size: 40px;
-color: black;
+font-size: 48px;
+color: white;
+text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.principal p{
+font-size: 20px;
+color: #f1f1f1;
+text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
 }
 
 .principal p{
@@ -117,4 +131,18 @@ text-align: center;
 padding: 20px;
 margin-top: 30px;
 width: 100%;
+}
+.principal::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.4);
+}
+
+.principal *{
+position: relative;
+z-index: 1;
 }
