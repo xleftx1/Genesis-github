@@ -13,31 +13,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Peluquería</title>
 
-```
+
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-```
+
 
 </head>
 <body>
 
-```
+
 <header>
     <h1>Genesis</h1>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
-<section class="principal">
+<section id="inicio" class="principal">
     <h2>Bienvenido a Genesis</h2>
     <p>Tu estilo comienza aquí.</p>
 </section>
 
-<h2 class="titulo-servicios">Servicios</h2>
+<h2 id="servicios" class="titulo-servicios">Servicios</h2>
 
 <section class="servicios">
 
@@ -63,7 +63,16 @@
     </div>
 
 </section>
+<section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>Somos Genesis Peluquería, especialistas en cortes, tinturados y peinados para toda ocasión.</p>
+</section>
 
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: 922-079-565</p>
+    <p>Email: contacto@genesis.com</p>
+</section>
 <footer>
     <p>Genesis Peluquería - 2026</p>
 </footer>
