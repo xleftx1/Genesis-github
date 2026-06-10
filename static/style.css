@@ -120,7 +120,7 @@ color: black;
 color: gray;
 }
 
-.tarjeta button{
+.tarjeta .btn-reserva{
 background-color: gold;
 color: black;
 border: none;
@@ -130,9 +130,11 @@ cursor: pointer;
 font-weight: bold;
 margin-top: 10px;
 transition: 0.3s;
+text-decoration: none;
+display: inline-block;
 }
 
-.tarjeta button:hover{
+.tarjeta .btn-reserva:hover{
 background-color: #e6c200;
 transform: scale(1.05);
 }
