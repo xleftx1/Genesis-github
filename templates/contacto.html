@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Genesis</title>
+    <title>Reserva tu Cita - Genesis</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -22,7 +22,7 @@
 
 <section>
     <center> 
-    <h2>Contáctanos</h2>
+    <h2>Reserva tu Cita</h2>
 
     <p>📞 Teléfono: 922-079-565</p>
 
@@ -33,11 +33,13 @@
     <h3>Envíanos un mensaje</h3>
 
     <form>
-        <input type="text" placeholder="Tu nombre"><br><br>
+        <input type="text" placeholder="Tu nombre"><br>
 
-        <input type="email" placeholder="Tu correo"><br><br>
+        <input type="email" placeholder="Tu correo"><br>
 
-        <textarea placeholder="Escribe tu mensaje"></textarea><br><br>
+        <textarea placeholder="Escribe tu mensaje"></textarea><br>
+
+        <input type="date" name="fecha"><br>
 
         <button type="submit">Enviar</button>
     </form>

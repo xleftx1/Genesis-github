@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -28,6 +28,23 @@ def tinturado():
 @app.route("/peinado")
 def peinado():
     return render_template("peinado.html")
+
+usuarios = []
+
+@app.route("/registro", methods=["GET", "POST"])
+def registro():
+    if request.method == "POST":
+        nombre = request.form["nombre"]
+        correo = request.form["correo"]
+
+        usuarios.append({
+            "nombre": nombre,
+            "correo": correo
+        })
+
+        return f"Usuario {nombre} registrado correctamente"
+
+    return render_template("registro.html")
 
 if __name__ == "__main__":
     app.run(debug=True);
